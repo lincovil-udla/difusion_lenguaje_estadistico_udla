@@ -1,2 +1,4 @@
-# difusion_lenguaje_estadistico_udla
-Difusión lenguaje estadístico udla. 
+![](https://github.com/lincovil-udla/imagenes/blob/main/RStudio_logo.svg)
+
+# Elementos lenguaje de programación estadístico R.
+ 
