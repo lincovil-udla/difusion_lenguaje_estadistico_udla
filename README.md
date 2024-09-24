@@ -1,4 +1,4 @@
-<img src="https://github.com/lincovil-udla/imagenes/blob/main/RStudio_logo.svg" alt="Rstudio" width="400" height="300">
+<img src="https://github.com/lincovil-udla/imagenes/blob/main/RStudio_logo.svg" alt="Rstudio" width="100" height="50">
 
 # Estadística y R
 Este repositorio contiene información 
