@@ -4,8 +4,8 @@
 Este repositorio contiene información 
 ## Plataformas enndonde corre R
 
-https://rdrr.io/snippets/
-
+- Snippets: https://rdrr.io/snippets/
+- Programiz https://www.programiz.com/r/online-compiler/
 ## Taller 2
 
 ### Actividad 1
