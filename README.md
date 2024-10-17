@@ -11,6 +11,20 @@ Este repositorio contiene información
 ### Actividad 1
 
 #### Reproducción de eventos aleatorios en R
+
+En el contexto de la Fórmula 1, una velocidad promedio de 100 kilómetros por hora sería extremadamente baja, 
+dado que los autos suelen promediar entre 200 y 250 km/h en una carrera normal. No obstante, podemos imaginar 
+un escenario muy atípico, como una carrera con condiciones climáticas adversas, múltiples incidentes en la pista, 
+o un circuito extremadamente técnico con muchas curvas cerradas, que podrían forzar a los autos a reducir significativamente 
+su velocidad promedio.
+
+En esta hipotética carrera de Fórmula 1, podrías tener autos que alcanzan velocidades pico de 150 km/h en las rectas, 
+pero debido a las frenadas intensas y las maniobras cuidadosas en curvas difíciles, la velocidad promedio caería a unos 100 km/h.
+
+Es como ver un guepardo que puede correr a 120 km/h, pero tiene que cazar en un terreno lleno de obstáculos, lo que reduce su 
+velocidad promedio a algo mucho más manejable. ¿Te imaginas una carrera así? 
+
+
 ```r
 # Experimento 1: lanzar 3 veces una moneda una moneda al aire
 Omega1 <- c("cara", "sello")
