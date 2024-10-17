@@ -94,47 +94,46 @@ velocidad promedio a algo mucho más manejable. ¿Te imaginas una carrera así?
 
 ```r
 set.seed(110)
-datos3 <- rnorm(n, mean=100, sd=10 )
-intervalo <- seq(min(datos3), max(datos3)+1, by=2)
+datos1 <- rnorm(n, mean=100, sd=10 )
+intervalo <- seq(min(datos1), max(datos1)+1, by=2)
 
-hist(datos3, 
-     main="Histograma datos simetricos sin outliers", 
+hist(datos1, 
+     main="Histograma datos simetricos sin datos extremos ", 
      breaks=intervalo )
-
 ```
 
 Pertinencia de la mediana sobre la media
 
 ```r
-datos33 <- c(datos3, rnorm(100, mean=300, sd=1))
+datos2 <- c(datos1, rnorm(100, mean=300, sd=1))
 
-boxplot(datos33, horizontal = TRUE)
-summary(datos3)
-media33 <- mean(datos33)
-mediana33 <- median(datos33)
+boxplot(datos2, horizontal = TRUE)
+summary(datos2)
+media <- mean(datos2)
+mediana <- median(datos2)
 
-print(paste("Media:", media33))
-print(paste("Mediana:", mediana33))
-print(paste("Diferencia media -mediana:", media33 - mediana33))
+print(paste("Media:", media))
+print(paste("Mediana:", mediana))
+print(paste("Diferencia media -mediana:", media - mediana))
 
-intervalo33 <- seq(min(datos33), max(datos33)+1, by= 1)
+intervalo <- seq(min(datos2), max(datos2)+1, by= 1)
 
-hist(datos33, breaks=intervalo33,
+hist(datos2, breaks=intervalo33,
      main="Histograma datos simetricos con outliers")
 
-hist(datos33, 
-     main="Histograma datos simetricos sin outliers", 
+hist(datos2, 
+     main="Histograma datos simetricos transladados", 
      breaks=intervalo33,
      xlim = c(60, 150))
 
 abline( v= media33, col="blue", lwd=3)
 abline( v= mediana33 , col="red", lwd=3)
 legend("topright", legend=c("Mediana", "Media"), 
-       col=c("red", "blue"), lwd=3, cex = 0.85)
+       col=c("red", "blue"), lwd=3, cex = 1)
 
 ```
 
- Propiedades de la media
+Propiedades de la media
 ```r
 # Crear un vector de datos original
 datos <- c(10, 12, 14, 16, 18)
