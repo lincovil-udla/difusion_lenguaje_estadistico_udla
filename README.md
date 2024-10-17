@@ -82,6 +82,7 @@ Generos datos con distintos tipo de simetria
 
 # Pertinencia de la mediana y media en datos con observaciones extremas
 
+```r
 set.seed(110)
 datos3 <- rnorm(n, mean=100, sd=10 )
 intervalo <- seq(min(datos3), max(datos3)+1, by=2)
@@ -93,6 +94,7 @@ hist(datos3,
 ```
 
 Pertinencia de la mediana sobre la media
+
 ```r
 datos33 <- c(datos3, rnorm(100, mean=300, sd=1))
 
