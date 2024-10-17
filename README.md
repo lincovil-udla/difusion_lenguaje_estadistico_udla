@@ -133,7 +133,8 @@ legend("topright", legend=c("Mediana", "Media"),
 
 ```
 
-Propiedades de la media
+Propiedades del promedio
+
 ```r
 # Crear un vector de datos original
 datos <- c(10, 12, 14, 16, 18)
@@ -145,9 +146,6 @@ print(paste("Media original:", media_original))
 # Sumar una constante (por ejemplo, 5) a cada valor
 datos_sumados <- datos + 10
 
-par(mfcol = c(1, 2))
-boxplot(datos, main= "Sin suma")
-boxplot(datos_sumados, main = "Con suma")
 
 # Calcular la nueva media
 media_sumada <- mean(datos_sumados)
@@ -156,6 +154,15 @@ print(paste("Media después de sumar 10:", media_sumada))
 # Comparar las medias mediante la diferencia
 diferencia <- media_sumada - media_original
 print(paste("Diferencia entre las medias:", diferencia))
+
+
+# Reunir los datos en solo un una matriz
+X <- data.frame(x= c(datos, datos_sumados), y=c(rep("No sumado",5), rep("Sumado",5)) )
+boxplot(x~y, data=X)
+abline( h= media_original, col="blue", lwd=3)
+abline( h= media_sumada , col="red", lwd=3)
+legend("topleft", legend=c("Media sumada", "Media no sumada"), 
+       col=c("red", "blue"), lwd=3, cex = 1)
 
 ```
 
@@ -174,6 +181,9 @@ datos + 10
 varianza_mas_10 <- var(datos + 10)
 print(paste("Varianza X+10:", varianza_mas_10))
 
+# Las varianzas son iguales
+print(paste("Diferencia entre las medias:", 
+            varianza_original - varianza_mas_10))
 
 # Multiplicar cada valor por una constante (por ejemplo, 3)
 datos_multiplicados <- 3*datos
@@ -186,6 +196,18 @@ print(paste("Varianza después de multiplicar por 3:", varianza_multiplicada))
 factor_multiplicacion <- varianza_multiplicada / varianza_original
 print(paste("Factor de multiplicación de la varianza:", factor_multiplicacion))
 
+# Reunir los datos en solo un una matriz
+Y <- data.frame(x= c(datos, datos_multiplicados), 
+                y=c(rep("Original",5), rep("Múltiplicado",5)) )
+
+boxplot(x~y, data=Y,
+        horizontal = TRUE)
+abline( h= media_original, col="blue", lwd=3)
+abline( h= media_sumada , col="red", lwd=3)
+legend("topright", 
+       legend=c(paste("Varianza original", varianza_original), 
+                paste("Varianza aumentado",varianza_multiplicada)), 
+        lwd=3, cex = 1.5)
 
 ```
 
