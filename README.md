@@ -190,7 +190,7 @@ print(paste("Factor de multiplicación de la varianza:", factor_multiplicacion))
 
 ```
 
-<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/Ejemplo_varianza.png" alt="Rstudio" width="100" height="50">
+<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/Ejemplo_varianza.png" alt="Rstudio" width="100" height="300">
 
 ## Referencias
 
