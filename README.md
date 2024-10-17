@@ -190,6 +190,8 @@ print(paste("Factor de multiplicación de la varianza:", factor_multiplicacion))
 
 ```
 
+<img src="https://github.com/lincovil-udla/imagenes/blob/main/RStudio_logo.svg" alt="Rstudio" width="100" height="50">
+
 ## Referencias
 
 - Manual de R en linea. https://fhernanb.github.io/Manual-de-R/
