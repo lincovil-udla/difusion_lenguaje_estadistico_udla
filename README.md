@@ -2,7 +2,7 @@
 
 # Estadística y R
 Este repositorio contiene información 
-## Plataformas enndonde corre R
+## Plataformas en donde corre R
 
 - Snippets: https://rdrr.io/snippets/
 - Programiz https://www.programiz.com/r/online-compiler/
