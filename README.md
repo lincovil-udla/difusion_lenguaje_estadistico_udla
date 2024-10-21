@@ -225,7 +225,7 @@ legend("topright",
 
 ```
 
-<img src=" https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/boxplot%20varianza.png" alt="Rstudio" width="400" height="300">
+<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/boxplot%20varianza.png" alt="Rstudio" width="500" height="400">
 
 ## Referencias
 
