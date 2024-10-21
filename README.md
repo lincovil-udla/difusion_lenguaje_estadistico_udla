@@ -104,6 +104,8 @@ hist(datos1,
      breaks=intervalo )
 ```
 
+<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/histograma%201.png" alt="Rstudio" width="400" height="300">
+
 Pertinencia de la mediana sobre la media
 
 ```r
@@ -135,7 +137,13 @@ legend("topright", legend=c("Mediana", "Media"),
 
 ```
 
-Propiedades del promedio
+<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/boxplot%20extremos.png" alt="Rstudio" width="400" height="300">
+
+<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/histograma%20con%20extremos.png" alt="Rstudio" width="400" height="300">
+
+<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/histograma%20sin%20extremos.png" alt="Rstudio" width="400" height="300">
+
+## Propiedades del promedio
 
 ```r
 # Crear un vector de datos original
@@ -167,8 +175,12 @@ legend("topleft", legend=c("Media sumada", "Media no sumada"),
        col=c("red", "blue"), lwd=3, cex = 1)
 
 ```
+<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/boxplot%20promedio.png" alt="Rstudio" width="400" height="300">
 
-Propiedades de la varianza
+## Propiedades de la varianza
+
+$$ \ (1) \  Var(X+c) = Var(X).$$
+$$ \ (2) \  Var(cX) = c^2 Var(X). $$
 
 ```r
 # Crear un vector de datos original
@@ -213,7 +225,7 @@ legend("topright",
 
 ```
 
-<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/Ejemplo_varianza.png" alt="Rstudio" width="400" height="300">
+<img src=" https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/boxplot%20varianza.png" alt="Rstudio" width="400" height="300">
 
 ## Referencias
 
