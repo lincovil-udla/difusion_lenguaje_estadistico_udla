@@ -76,9 +76,11 @@ tabla3 <- (table(datos$x3)/30)*100 # row percentages
 barplot(tabla3,
         col = c("red", "blue", "green", "orange"))
 ```
-### Actividad 2
+# Taller 3
 
-# Pertinencia de la mediana y media en datos con observaciones extremas
+## Actividad 2
+
+### Pertinencia de la mediana y media en datos con observaciones extremas
 
 En el contexto de la Fórmula 1, una velocidad promedio de 100 kilómetros por hora sería extremadamente baja, 
 dado que los autos suelen promediar entre 200 y 250 km/h en una carrera normal. No obstante, podemos imaginar 
