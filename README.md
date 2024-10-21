@@ -206,7 +206,7 @@ abline( h= media_original, col="blue", lwd=3)
 abline( h= media_sumada , col="red", lwd=3)
 legend("topright", 
        legend=c(paste("Varianza original", varianza_original), 
-                paste("Varianza aumentado",varianza_multiplicada)), 
+                paste("Varianza aumentada",varianza_multiplicada)), 
         lwd=3, cex = 1.5)
 
 ```
