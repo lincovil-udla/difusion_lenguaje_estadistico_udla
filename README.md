@@ -95,9 +95,11 @@ Es como ver un guepardo que puede correr a 120 km/h, pero tiene que cazar en un 
 velocidad promedio a algo mucho más manejable. ¿Te imaginas una carrera así? 
 
 ```r
+# Generamos datos simetricos
 set.seed(110)
+n <- 100
 datos1 <- rnorm(n, mean=100, sd=10 )
-intervalo <- seq(min(datos1), max(datos1)+1, by=2)
+intervalo <- seq( min(datos1)-1, max(datos1)+1, by=2)
 
 hist(datos1, 
      main="Histograma datos simetricos sin datos extremos ", 
@@ -109,9 +111,15 @@ hist(datos1,
 Pertinencia de la mediana sobre la media
 
 ```r
-datos2 <- c(datos1, rnorm(100, mean=300, sd=1))
 
-boxplot(datos2, horizontal = TRUE)
+# Agregamos valores extremos a la derecha del promedio
+set.seed(23)
+datos2 <- c(datos1, rnorm(15, mean=200, sd=10))
+
+# Graficamos caja y bigotes y observamos los valores extremos
+boxplot(datos2, horizontal = TRUE, 
+        main="Caja y bigotes con valores extremos")
+
 summary(datos2)
 media <- mean(datos2)
 mediana <- median(datos2)
@@ -120,20 +128,26 @@ print(paste("Media:", media))
 print(paste("Mediana:", mediana))
 print(paste("Diferencia media -mediana:", media - mediana))
 
-intervalo <- seq(min(datos2), max(datos2)+1, by= 1)
+intervalo2 <- seq(min(datos2), max(datos2)+1, by= 1)
 
-hist(datos2, breaks=intervalo33,
-     main="Histograma datos simetricos con outliers")
+# Histograma con valores 
+hist(datos2, breaks=intervalo2,
+     main="Histograma datos simétricos con valores extremos")
+abline( v= media33, col="blue", lwd=3)
+abline( v= mediana33 , col="red", lwd=3)
+legend("topright", legend=c("Mediana", "Media"), 
+       col=c("red", "blue"), lwd=3, cex = 1.5)
+
 
 hist(datos2, 
-     main="Histograma datos simetricos transladados", 
-     breaks=intervalo33,
+     main="Histograma datos simetricos transladados. Omitimos valores extremos", 
+     breaks=intervalo2,
      xlim = c(60, 150))
 
 abline( v= media33, col="blue", lwd=3)
 abline( v= mediana33 , col="red", lwd=3)
 legend("topright", legend=c("Mediana", "Media"), 
-       col=c("red", "blue"), lwd=3, cex = 1)
+       col=c("red", "blue"), lwd=3, cex = 1.5)
 
 ```
 
@@ -146,6 +160,9 @@ legend("topright", legend=c("Mediana", "Media"),
 ## Propiedades del promedio
 
 ```r
+
+# Propiedad del promedio
+
 # Crear un vector de datos original
 datos <- c(10, 12, 14, 16, 18)
 
@@ -174,7 +191,9 @@ abline( h= media_sumada , col="red", lwd=3)
 legend("topleft", legend=c("Media sumada", "Media no sumada"), 
        col=c("red", "blue"), lwd=3, cex = 1)
 
+
 ```
+
 <img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/boxplot%20promedio.png" alt="Rstudio" width="400" height="300">
 
 ## Propiedades de la varianza
@@ -183,6 +202,8 @@ $$ \ (1) \  Var(X+c) = Var(X).$$
 $$ \ (2) \  Var(cX) = c^2 Var(X). $$
 
 ```r
+# Propiedad de la varianza
+
 # Crear un vector de datos original
 datos <- c(10, 15, 20, 25, 30)
 
