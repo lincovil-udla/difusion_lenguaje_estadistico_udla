@@ -253,6 +253,12 @@ legend("topright",
 
 <img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/boxplot%20varianza.png" alt="Rstudio" width="500" height="400">
 
+
+## Reproducir otro códigos presentes en la web
+
+- Actividad 1. Medidas de tendencia central: https://fhernanb.github.io/Manual-de-R/central.html#media
+- Actividad 2. Gráficos: https://fhernanb.github.io/Manual-de-R/estad%C3%ADstica-descriptiva-con-dplyr.html#gr%C3%A1ficos
+- 
 ## Referencias
 
 - Manual de R en linea. https://fhernanb.github.io/Manual-de-R/
