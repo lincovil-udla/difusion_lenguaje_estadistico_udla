@@ -1,4 +1,5 @@
 <img src="https://github.com/lincovil-udla/imagenes/blob/main/RStudio_logo.svg" alt="Rstudio" width="100" height="50">
+<img src="https://raw.githubusercontent.com/lincovil-udla/difusion_lenguaje_estadistico_udla/refs/heads/main/Imagenes/udla%20logo.png" alt="logo" width="100" height="50">
 
 # Estadística y R
 Este repositorio contiene información 
