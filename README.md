@@ -160,6 +160,10 @@ legend("topright", legend=c("Mediana", "Media"),
 
 ## Propiedades del promedio
 
+$$ \mbox{Promedio}(x_1+c+\ldots+x_1+c) = \mbox{Promedio}+c.$$
+
+$$\mbox{Promedio}(cx_1+\ldots+cx_1) = c\mbox{Promedio}.$$
+
 ```r
 
 # Propiedad del promedio
