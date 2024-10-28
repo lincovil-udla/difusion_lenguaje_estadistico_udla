@@ -160,9 +160,9 @@ legend("topright", legend=c("Mediana", "Media"),
 
 ## Propiedades del promedio
 
-$$ \mbox{Promedio}(x_1+c+\ldots+x_1+c) = \mbox{Promedio}+c.$$
+$$ \ (1) \ \mbox{Promedio}(x_1+c+\ldots+x_1+c) = \mbox{Promedio}+c.$$
 
-$$\mbox{Promedio}(cx_1+\ldots+cx_1) = c\mbox{Promedio}.$$
+$$ \ (2) \ \mbox{Promedio}(cx_1+\ldots+cx_1) = c\mbox{Promedio}.$$
 
 ```r
 
@@ -203,8 +203,8 @@ legend("topleft", legend=c("Media sumada", "Media no sumada"),
 
 ## Propiedades de la varianza
 
-$$ \ (1) \  Var(X+c) = Var(X).$$
-$$ \ (2) \  Var(cX) = c^2 Var(X). $$
+$$ \ (3) \  Var(X+c) = Var(X).$$
+$$ \ (4) \  Var(cX) = c^2 Var(X). $$
 
 ```r
 # Propiedad de la varianza
